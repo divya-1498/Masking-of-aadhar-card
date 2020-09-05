@@ -1,2 +1,2 @@
 # Masking-of-aadhar-card
-This code masks the first few numbers of the aadhar card by following masking techniques of Image processing
+This code masks the first few numbers of the aadhar card by following masking techniques of Image processing in python language. Two methods are shown.
