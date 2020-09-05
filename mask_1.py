@@ -1,10 +1,12 @@
+@Divya Prakash Hungund
+
 import cv2 
 import numpy as np 
 
 #%% read the image into python env #%%
 
 # convert the RGB image to grayscale
-img1 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\Capture47.PNG")
+img1 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\Capture47.PNG") #Add your image location here
 gray = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 
 # apply corresponding threshold to convert to BW.
@@ -32,7 +34,7 @@ cv2.imshow('reinv', reinv)
 
 #%% Mask second image
 
-img2 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\Image_2.jpeg")
+img2 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\Image_2.jpeg") #Add image location here
 gray1 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 
 thresh, grayBW1 = cv2.threshold(gray1, 100, 255, cv2.THRESH_BINARY)
@@ -52,7 +54,7 @@ cv2.imshow('reinv1', reinv1)
 
 #%% Mask third image
 
-img3 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\Image_3.jpeg")
+img3 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\Image_3.jpeg") #Add image location here
 gray2 = cv2.cvtColor(img3, cv2.COLOR_BGR2GRAY)
 
 thresh, grayBW2 = cv2.threshold(gray2, 100, 255, cv2.THRESH_BINARY)
