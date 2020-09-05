@@ -1,14 +1,15 @@
+@Divya Prakash Hungund 
 from imutils import contours 
 import numpy as np
 import imutils
 import cv2
 
-img1 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\Capture47.PNG")
-img2 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\ocra1.png")
+img1 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\Capture47.PNG") #Add image location here
+img2 = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\ocra1.png") #Add image location here
 
 
 
-ref = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\ocra1.png")
+ref = cv2.imread(r"D:\Docs and stuff\Profile Details\mask\ocra1.png") 
 ref = cv2.cvtColor(ref, cv2.COLOR_BGR2GRAY)
 ref = cv2.threshold(ref, 10, 255, cv2.THRESH_BINARY_INV)[1]
 
